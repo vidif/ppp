@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CostyPollos - Pedidos en Línea</title>
+  </head>
+  <body>
+    <form name="orders" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="orderNumber" />
+      <input type="text" name="customerName" />
+      <input type="text" name="customerPhone" />
+      <input type="text" name="deliveryType" />
+      <input type="text" name="deliveryAddress" />
+      <input type="text" name="paymentMethod" />
+      <input type="text" name="items" />
+      <input type="text" name="total" />
+      <input type="text" name="orderDate" />
+    </form>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

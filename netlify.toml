@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  node_bundler = "esbuild"
+
+[template.environment]
+  NETLIFY_ACCESS_TOKEN = "nfp_qqnwX3cSSQo3oT8vGdafhbHLWQkhWgEya501"
+  SITE_ID = "b4a79d4f-bc97-465f-8969-2dda6a4ff51c"
+  FORM_ID = "67b13fc05711ef0008e263f8"
